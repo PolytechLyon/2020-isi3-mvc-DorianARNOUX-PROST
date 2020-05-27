@@ -4,7 +4,7 @@
 > **Ne restez pas bloqués bêtement, demander de l'aide**
 > Ne copier pas le code de votre voisin, ça se voit.
 
-Nom/Prénom: `.......`
+Nom/Prénom: Arnoux-Prost Dorian
 
 Lien du codesandbox: `.......`
 
@@ -18,15 +18,20 @@ Il est inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_Hort
 ## Avant-propos
 
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici. 
+ 
+![alt text](https://github.com/PolytechLyon/2020-isi3-mvc-DorianARNOUX-PROST/blob/master/Diagram_MVC.png "Diag MVC")
+
 Utiliser un outils commde Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
 
 2. Expliquer ce pattern à l'aide en complétant ce texte.
 
-Le pattern MVP, vise à découper le `.......`, de la `.......` et du `.......` afin de rendre le code plus `.......`.
-Les responsabilités ne sont alors plus `.......`.
-On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le `.......`.
+Le pattern MVP, vise à découper le `Modele`, de la `Vue` et du `Controleur` afin de rendre le code plus `Souple pour les futures implémentations`.
+Les responsabilités ne sont alors plus `au même endroit pour tout`.
+On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le `back`.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
+
+On doit privilegier le MVC des qu'il y a de la gestion de données et de l'affichage dans un même projet afin de rendre le code plus lisible et que ce soit plus simple d'y ajouter des fonctionalités.
 
 ## A faire (obligatoire)
 
@@ -42,10 +47,12 @@ En quoi cela relève du design pattern ObserverObservable.
 
 1. Expliquer votre implémentation:
 
-L'usage d'une callback permet ici de `.......` afin dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la `.......` il peut notifier la `.......`.
+L'usage d'une callback permet ici de `appeler la vue` afin dire à la _View_ de se redessiner.
+L'objet _Model_ n'a pas de lien avec `la vue` pourtant grâce à la `fonction de callback` il peut notifier la `vue`.
 
 2. Insérer ici un UML montrant le pattern Observer-Observable liés aux objects de ce TP.
+
+![alt text](https://github.com/PolytechLyon/2020-isi3-mvc-DorianARNOUX-PROST/blob/master/Diagram_observer.png "Diag Observer")
 
 ## Optionel
 
